@@ -52,7 +52,7 @@ function getWeather() {
     html.style.color = txtColor
   }
 
-  themeSelect.onchange = function () {
+  theme.onchange = function () {
     theme.value === 'black' ? update('black','white'): update('white','black');
   }
 }
