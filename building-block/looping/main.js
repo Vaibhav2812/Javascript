@@ -9,9 +9,9 @@ function search() {
     var searchEle = input.value;
     input.value = '';
     input.focus();
-    for(var i = 0; i < contacts.length; i++) {
+    for (var i = 0; i < contacts.length; i++) {
         var splitContact = contacts[i].split(':');
-        if(splitContact[0] === searchEle) {
+        if (splitContact[0] === searchEle) {
             para.textContent = `${splitContact[0]} contact number is ${splitContact[1]}`;
             break;
         } else {
@@ -19,3 +19,23 @@ function search() {
         }
     }
 }
+/*
+get All square root of given numberusing continue keyword
+*/
+var btnSqrt = document.querySelector('#btnSqrt');
+const getSqrt = () => {
+    var sqrt = document.querySelector('#sqrt');
+    var num = sqrt.value;
+    var para = document.querySelector('#sqrtInfo')
+    for (var i = 1; i < num; i++) {
+        var sqrRoot = Math.sqrt(i);
+        if (Math.floor(sqrRoot) !== sqrRoot) {
+            continue;
+        }
+
+    para.textContent += ' ' + i + ' '
+    }
+}
+btnSqrt.addEventListener('click', function () {
+    getSqrt();
+})

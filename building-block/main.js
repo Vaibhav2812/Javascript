@@ -47,12 +47,12 @@ function getWeather() {
       para.textContent = ''
   }
 
-  function update(bgColor,txtColor) {
+  function update(bgColor, txtColor) {
     html.style.backgroundColor = bgColor;
     html.style.color = txtColor
   }
 
   theme.onchange = function () {
-    theme.value === 'black' ? update('black','white'): update('white','black');
+    theme.value === 'black' ? update('black', 'white') : update('white', 'black');
   }
 }
