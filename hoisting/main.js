@@ -13,8 +13,8 @@ console.log(a);
 
 /* console.log(b); */
 
-console.log(hoistVar) // undefined
-var hoistVar = 'The variable has been hoisted.';
+// console.log(hoistVar) // undefined
+// var hoistVar = 'The variable has been hoisted.';
 
 function myFunc() {
     console.log('func hoist', message);
@@ -23,8 +23,8 @@ function myFunc() {
 
 myFunc();
 
-console.log(es6Hoist)
-let es6Hoist = 'the variable has been hoist';
+// console.log(es6Hoist)
+// let es6Hoist = 'the variable has been hoist';
 
 
 //find second largest number in array;
@@ -75,3 +75,19 @@ let getFrequency = (str) => {
   }
   console.log(getFrequency('javascript is awesome'));
   
+  //Problem 1
+  for (var i = 1; i <= 5; i++) {
+    let cell = document.getElementById(`cell${i}`);
+    cell.addEventListener('click', () => {
+      console.log(getValue(cell));
+    });
+  }
+  
+  function getValue(val) {
+  return val.innerText;
+  }
+
+  const tab = document.getElementById('myTable tr');
+  tab.on('click', (cell)=> {
+    console.log('======>', this.id)
+  })
