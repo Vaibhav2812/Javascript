@@ -40,3 +40,4 @@ const person = new Person('vaibhav', 'patil', 25, 'male',
     ['listening music', 'having fun with friends', 'dancing', 'watching tv']);
 console.log(person.name);
 person.bio();
+
