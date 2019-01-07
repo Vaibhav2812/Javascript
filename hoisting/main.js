@@ -163,3 +163,15 @@ function getFactorial(num) {
   return f;
 }
 console.log(getFactorial(5));
+
+//probem
+let sortArr = [1,2,[1,2]];
+console.log(sortArr.sort().join('__'));  
+
+//find longest word in string
+//ex: 'javascript is awseone and nice //javscript
+
+let word = 'javascript is awesomr and nice';
+word = word.split(' ').sort((a,b) => a.length - b.length);
+console.log('===========>', word[word.length-1]);
+
