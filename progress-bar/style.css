@@ -1,0 +1,9 @@
+#progress-bar {
+    border: 1px solid;
+    height: 5px;
+}
+#progress {
+    height: 5px;
+    background-color: red;
+    width: 5%;
+}
